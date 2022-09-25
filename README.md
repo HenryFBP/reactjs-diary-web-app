@@ -8,4 +8,6 @@ A diary web app created with reactjs and redux persist from a skillshare tutoria
     
 ## Source Code
 
-<https://github.com/HassanChaabawi/reactjs-diary-web-app>
+Original: <https://github.com/HassanChaabawi/reactjs-diary-web-app>
+
+My Fork: <https://github.com/HenryFBP/reactjs-diary-web-app>
