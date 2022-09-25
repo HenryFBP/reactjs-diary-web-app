@@ -25,6 +25,9 @@ export class Main extends Component {
                         <DiaryForm addItem={(item) => addItem(item)}/>
                     </div>
                     <div className="diary-app" style={{paddingTop: 20}}>
+
+                        <h1>Diary entries:</h1>
+
                         {diaryItems.length > 0 ? (
                             diaryItems.map((item) => {
                                 return (
@@ -39,7 +42,7 @@ export class Main extends Component {
                                 );
                             })
                         ) : (
-                            <h1>No Items</h1>
+                            <h2>No Items</h2>
                         )}
                     </div>
                 </div>
@@ -55,7 +58,15 @@ export class Main extends Component {
                         </Modal.Title>
                     </Modal.Header>
                     <Modal.Body>{activeItem?.text}</Modal.Body>
-                    <Modal.Footer>{activeItem?.date}</Modal.Footer>
+
+                    {
+                        activeItem?.date
+                            ?
+                            <Modal.Footer>Posted on {activeItem?.date}</Modal.Footer>
+                            :
+                            null
+                    }
+
                 </Modal>
             </div>
         );
