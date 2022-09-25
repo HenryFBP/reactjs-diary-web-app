@@ -1,5 +1,11 @@
 A diary web app created with reactjs and redux persist from a skillshare tutorial: https://www.skillshare.com/r/user/hassanchaabawi
 
-1 - run "npm install"
+## Running
 
-2 - run "npm start"
+    npm install
+
+    npm start
+    
+## Source Code
+
+<https://github.com/HassanChaabawi/reactjs-diary-web-app>
